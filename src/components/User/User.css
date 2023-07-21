@@ -1,0 +1,75 @@
+.user {
+  display: flex;
+  gap: 3px;
+  padding: 5px 10px;
+  overflow: hidden;
+}
+
+.user-id {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+.user-id-selected {
+  color: #a36ac4;
+}
+
+.helmet {
+  padding: 5px;
+}
+
+.helmet-selected {
+  border-radius: 100%;
+  -webkit-box-shadow: inset 0px 0px 0px 3px #a36ac4;
+  -moz-box-shadow: inset 0px 0px 0px 3px #a36ac4;
+  box-shadow: inset 0px 0px 0px 3px #a36ac4;
+}
+
+.user-info {
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  width: 70%;
+}
+
+.user-name {
+  font-size: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.user-time {
+  display: flex;
+  gap: 5px;
+  color: #5975ff;
+}
+
+.user-time div:first-child {
+  color: #a36ac4;
+}
+
+@media (min-width: 640px) {
+  .user {
+    font-size: 18px;
+  }
+
+  .user-name {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .user {
+    font-size: 20px;
+  }
+
+  .user-name {
+    font-size: 22px;
+  }
+}
